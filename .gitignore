@@ -1,0 +1,9 @@
+.DS_Store
+.vscode/
+node_modules/
+safronov_oleksandr/
+srs/css/
+srs/images/
+srs/js/*.min.js
+srs/*.min.html
+srs/fonts/*.woff2
