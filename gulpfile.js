@@ -73,16 +73,16 @@ function building() {
       "src/fonts/*.*",
     ],
     { base: "src", encoding: false }
-  ).pipe(dest("safronov_oleksandr"));
+  ).pipe(dest("docs"));
 }
 function cleanDist() {
-  ensureDirectoryExists("safronov_oleksandr");
-  return src("safronov_oleksandr").pipe(clean());
+  ensureDirectoryExists("docs");
+  return src("docs").pipe(clean());
 }
 function buildingHtml() {
   return src(["src/index.min.html"])
     .pipe(concat("index.html"))
-    .pipe(dest("safronov_oleksandr"));
+    .pipe(dest("docs"));
 }
 
 function ensureDirectoryExists(directory) {
